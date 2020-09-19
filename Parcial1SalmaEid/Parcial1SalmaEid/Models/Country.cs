@@ -6,18 +6,7 @@ using System.Web;
 
 namespace Parcial1SalmaEid.Models
 {
-    public class Language
-    {
-
-        public string iso639_1 { get; set; }
-
-        public string iso639_2 { get; set; }
-
-        public string name { get; set; }
-
-        public string nativeName { get; set; }
-
-    }
+    
     public class Country
     {
         
@@ -44,7 +33,8 @@ namespace Parcial1SalmaEid.Models
 
 
         [Required]
-        public List <Language> lenguage { get; set; }
+        [StringLength(30)]
+        public string language { get; set; }
 
 
         [Url]

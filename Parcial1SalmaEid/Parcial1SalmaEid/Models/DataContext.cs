@@ -13,5 +13,7 @@ namespace Parcial1SalmaEid.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<Parcial1SalmaEid.Models.Country> Countries { get; set; }
     }
 }
